@@ -19,6 +19,7 @@ export default function MainPage() {
     return (
         <div>
             <h1>This terrible UI is under development</h1>
+            <h3>{process.env.REACT_APP_BACKEND_URL}</h3>
             <input type="text" placeholder="enter username" onChange={handleChange}></input>
             <button onClick={getUsernames}>Get usernames</button>
             <button onClick={setuserNames}>Set usernames</button>
